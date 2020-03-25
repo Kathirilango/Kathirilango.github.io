@@ -297,17 +297,18 @@ footer{
 
 @media (max-width: 576px) { /*Extra Small*/
 	
-	.quote{ font-size: 220%; }
-	.display-2{ font-size: 320%; }
+	.caption{ padding-top: 8em; }
+	.quote{ font-size: 230%; }
+	.display-2{ font-size: 330%; }
 	.continue{ font-size: 120%; }
 	.social a{ font-size: 2em; margin: .7rem; }	
-	.txt-wrapper{ padding-left: 0.7em; padding-right: 0.5em; font-size: 80%;}
+	.txt-wrapper{ padding-left: 0.7em; padding-right: 0.5em; font-size: 85%;}
 	.img-wrapper{
-		padding-left: 100px;
-		padding-right: 100px;
+		padding-left: 80px;
+		padding-right: 80px;
 	}
 	.img-wrapper .img-fluid{
-		border: 10px solid black;
+		border: 5px solid black;
 	}
 	.card-img-overlay .title{
 		font-size: 2.5em;
@@ -327,9 +328,9 @@ footer{
 	.modal-body, .modal-body a, .modal-body button{ font-size: 80%; }
 	.modal-title{ font-size: 120%; }
 	.modal-body img{
-		height: 170px;
-		width: 300px;
-		margin-left: 0%;
+		height: 80%;
+		width: 80%;
+		margin-left: 10%;
 	}
 
 }
