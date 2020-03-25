@@ -160,7 +160,7 @@ html, body {
 footer{
 	background: rgba(0,0,0, 0.5);
   color: white;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 #contact{
 	text-align: center;
@@ -291,31 +291,45 @@ footer{
 	.card-img-overlay .subtitle .subtitle-info{ font-size: 0.7em; }
 	.card-img-overlay:hover .subtitle .btn-lg,
 	.card-img-overlay .btn-lg{ font-size: 10px; }
+	#contact{ font-size: 120%; }
 
 }
 
 @media (max-width: 576px) { /*Extra Small*/
 	
-	.quote{ font-size: 350%; }
-	.display-2{ font-size: 450%; }
-	.continue{ font-size: 150%; }
+	.quote{ font-size: 220%; }
+	.display-2{ font-size: 320%; }
+	.continue{ font-size: 120%; }
 	.social a{ font-size: 2em; margin: .7rem; }	
+	.txt-wrapper{ padding-left: 0.7em; padding-right: 0.5em; font-size: 80%;}
 	.img-wrapper{
 		padding-left: 100px;
 		padding-right: 100px;
+	}
+	.img-wrapper .img-fluid{
+		border: 10px solid black;
 	}
 	.card-img-overlay .title{
 		font-size: 2.5em;
 		transition: 0s;
 	}
 	.display-4 { font-size: 250%;}
-	#bsa, #blackbox{ margin-top: 10%; }
+	#workato, #avi, #bsa, #blackbox, #eagle{ margin-top: 0%; }
 	#card-2{ padding-top:1.5em; }
+	.card-img-overlay .title { font-size: 1.7em; }
 	.card-img-overlay:hover .subtitle .subtitle-position,
-	.card-img-overlay .subtitle .subtitle-position{ font-size: 1.5em; }
+	.card-img-overlay .subtitle .subtitle-position{ font-size: 1.2em; }
 	.card-img-overlay:hover .subtitle .subtitle-info,
-	.card-img-overlay .subtitle .subtitle-info{ font-size: 1.2em; }
+	.card-img-overlay .subtitle .subtitle-info{ font-size: 0.8em; }
 	.card-img-overlay:hover .subtitle .btn-lg,
 	.card-img-overlay .btn-lg{ font-size: 12px; }
+
+	.modal-body, .modal-body a, .modal-body button{ font-size: 80%; }
+	.modal-title{ font-size: 120%; }
+	.modal-body img{
+		height: 170px;
+		width: 300px;
+		margin-left: 0%;
+	}
 
 }
