@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kathir Ilango</title>
+	<link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Garamond" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="fixed-background"></div>
+
+<!--Home-->
+<div class="container-fluid fill">
+	<div class="row caption">
+		<div class="col-12">
+			<h3 class="quote"><i><b>Oh, hey there!</b>    <span class="quote-source">-George Kittle</span></i></h3>
+		</div>
+		<div class="col-12">
+			<h1 class="display-2" id="type_text"><span class="blinking-cursor">|</span></h1>
+		</div>
+		<div class="col-12 social">
+			<a href="https://www.linkedin.com/in/kathirilango" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a href="https://github.com/kathirilango" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://twitter.com/kathirilango11?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+		</div>
+		<div class="col-12 continue">
+			<a href="#about">&darr; Continue</a>
+		</div>
+	</div>
+</div>
+
+<!--About-->
+<div class="container-fluid" id="about">
+	<div class="row padding">
+		<div class="col-md-12 col-lg-3 tweet">
+			<h6>My Latest Tweet</h6>
+			<a class="twitter-timeline tw-align-center" href="https://twitter.com/kathirilango11" data-tweet-limit="1" data-width="399" data-chrome="nofooter noheader noborders noscrollbar"></a>
+		</div>
+		<div class="col-md-12 col-lg-5 txt-wrapper">
+			<h1 class="hdr-center">About Me</h1>
+			<hr>
+			<p>I’m a third year Computer Science and Engineering student at UCLA. I was born and raised in the Bay Area and my goal 
+				is to be a software developer full time. I have no particular interests within the field at the moment; my only interest 
+				is to learn as much as possible about various technologies and systems until I find a team or project to which I can best 
+				contribute.</p>
+			<p>On the side, I have a massive passion for sports. I’m a huge believer in sports analytics and the power of data science 
+				in the realm of athletics, and plan on making a difference in the field one day. The only time I throw analytics out 
+				the window is when the 49ers are concerned!</p>
+		</div>
+		<div class="col-md-12 col-lg-4 img-wrapper">
+			<img src="assets/me.jpg" class="img-fluid">
+		</div>
+	</div>
+</div>
+
+<!--Work-->
+
+<div class="container-fluid padding" id="work">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Experience and Projects</h1>
+			<hr class="work-line">
+		</div>
+		<hr>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-xl-4" id="card-1">
+			<div class="card">
+					<img class="card-img-top" src="assets/office_bw.jpg">
+					<div class="card-img-overlay">
+						<h1 class="title" id="workato">Workato</h1>
+						<div class="subtitle">
+							<h4 class="subtitle-position">Software Engineer Intern</h4>
+							<h6 class="subtitle-info">Summer 2019 - Mountain View CA</h6>
+							<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-workato">Learn More</button>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-xl-4" id="card-2">
+			<div class="card">
+					<img class="card-img-top" src="assets/office_bw.jpg">
+					<div class="card-img-overlay">
+						<h1 class="title" id="avi">Avi Networks</h1>
+						<div class="subtitle">
+							<h4 class="subtitle-position">Software Engineer Intern</h4>
+							<h6 class="subtitle-info">Summer 2018 - Santa Clara CA</h6>
+							<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-avi">Learn More</button>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-xl-4" id="card-3">
+			<div class="card">
+				<img class="card-img-top" src="assets/basketball.jpg">
+				<div class="card-img-overlay">
+					<h1 class="title" id="bsa">Bruin Sports Analytics</h1>
+					<div class="subtitle">
+						<h4 class="subtitle-position">Journalism Chair</h4>
+						<h6 class="subtitle-info">2017 &rarr; Present - Los Angeles CA</h6>
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-bsa">Learn More</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-xl-4" id="card-4">
+			<div class="card">
+				<img class="card-img-top" src="assets/wall_st.jpg">
+				<div class="card-img-overlay">
+					<h1 class="title" id="blackbox">BlackBox Trading, LLC</h1>
+					<div class="subtitle">
+						<h4 class="subtitle-position">Strategy Development</h4>
+						<h6 class="subtitle-info">2019 &rarr; Present - Fremont CA</h6>
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-blackbox">Learn More</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-xl-4" id="card-5">
+			<div class="card">
+				<img class="card-img-top" src="assets/eagle.jpg">
+				<div class="card-img-overlay">
+					<h1 class="title" id="eagle">Eagle Project</h1>
+					<div class="subtitle">
+						<h4 class="subtitle-position">Boy Scouts of America Troop 132</h4>
+						<h6 class="subtitle-info">2016 - Fremont CA</h6>
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-eagle">Learn More</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Footer-->
+<footer>
+	<div class="container-fluid" id="contact">
+		<div class="col-12"><a href="#"><i class="far fa-arrow-alt-circle-up"></i></a></div>
+		<div class="col-12 social-footer">
+			<a href="https://www.linkedin.com/in/kathirilango" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a href="https://github.com/kathirilango" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://twitter.com/kathirilango11?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+			<a data-toggle="popover" data-content="kathirilango11@gmail.com"><i class="far fa-envelope"></i></a>
+		</div>
+		<div class="col-12">Thank You</div>
+	</div>
+</footer>
+
+<!--Modals for Work Cards-->
+<div id="modal-workato" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+				<h4><b>Workato</b></h4>
+				<p>Workato is an integration automation SAAS company. Through their platform, users can automate workflows using 
+					various apps by building ‘recipes’. A recipe is essentially a set of tasks that will execute when a trigger event 
+					occurs. My job as an intern was to integrate AWS Simple Notification Service (SNS) into the platform, thus allowing 
+					users to include SNS tasks in their recipes. As Workato’s code base is primarily built on Rails, I did all of my 
+					work in Ruby. As a bonus with this project, I was able to learn a great deal about AWS as well through having to 
+					navigate its documentation while working on the connector.</p>
+				<a href="https://www.workato.com/integrations/aws_sns" target="_blank" type="button" class="btn btn-primary btn-md">Workato SNS Integration</a>
+				<button style="float: right;" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-avi" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+				<h4 class="modal-title"><b>Avi Networks</b></h4>
+				<p>Avi Networks is a multi-cloud application delivery company that was acquired by VMware in 2019. My job as an intern 
+					there was to integrate their testing libraries when they made the switch from Red Hat OpenShift to Google’s Kubernetes 
+					as their containerization software. While I wasn’t quite developing software the way I did at Workato the next year, I 
+					still learned a great deal by having to interact with Kubernetes on a daily basis and go through its documentation to 
+					implement functions of my own.</p>
+				<button style="float: right;" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-bsa" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+				<h4 class="modal-title"><b>Bruin Sports Analytics</b></h4>
+				<img src="assets/qb_chart.jpg">
+				<br>
+				<p>Bruin Sports Analytics is UCLA’s sports data science club. It was created during my first year of college and I’ve been 
+					with it ever since. I currently serve as the journalism chair, managing the quarterly articles that are written for our 
+					website. I also currently run the website itself (built on Jekyll framework), adding and removing content as needed. 
+					Sports analytics has become one of my favorite hobbies over the past few years and I have written quite a few articles of
+					 my own for the club.</p>
+				<a href="https://www.bruinsportsanalytics.com/kyleshanahan" target="_blank" type="button" class="btn btn-primary btn-md">Check Out My Latest Work</a>
+				<button style="float: right;" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-blackbox" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+				<h4 class="modal-title"><b>BlackBox Trading</b></h4>
+        <p>BlackBox Trading is a project that I’ve been working on with some friends for over a year now. Our team creates systematic 
+					trading strategies based on statistical factors. I do the actual development of the strategies, using python and the Quantopian 
+					API. After thoroughly backtesting our strategies over various time periods and stress events, we deploy them through a cloud 
+					PAAS. I didn’t have any knowledge of trading on the stock market before joining this project so it has been a very interesting 
+					endeavor for me and likely something I do for a long time to come. </p>
+				<a href="https://github.com/blackboxtrading1" target="_blank" type="button" class="btn btn-primary btn-md">View Github</a>
+				<button style="float: right;" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-eagle" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+				<h4 class="modal-title"><b>Eagle Scout Project</b></h4>
+        <p>Eagle Scout is the highest attainable rank in Boy Scouting. The Eagle Project is something that all Eagle candidates must 
+					complete in order to become an Eagle Scout. The project generally encompasses heavy planning and leadership, as the candidate 
+					must lead a group of people to complete the project rather than simply do it on his own. For my project, I built a 30 foot 
+					retaining wall for a trail at Tule Ponds, an outdoor educational facility in my hometown of Fremont. The months of planning 
+					paid off, as we managed to successfully complete the entire project in one day.</p>
+				<a href="https://msnucleus.org/watersheds/tule/eagle/kathir_Ilango.htm" target="_blank" type="button" class="btn btn-primary btn-md">Official Project Documentation</a>
+				<button style="float: right;" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+<!--Scripts-->
+<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="js/main.js"></script>
+</html>
