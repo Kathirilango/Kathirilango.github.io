@@ -96,6 +96,8 @@ html, body {
 	transition: 1s;
 	color: transparent;
 }
+.card-img-overlay:hover .subtitle .subtitle-position,
+.card-img-overlay .subtitle .subtitle-position{ font-size: 1.4em; }
 
 #workato{ margin-top: 10%; color: #00C09D; }
 #avi{ margin-top: 10%; color: #FF8700; }
@@ -141,8 +143,8 @@ html, body {
 
 /*Modals*/
 .modal-content{ background-color: #EFEFEF; }
-.modal-body .btn-md{ transition: .5s; }
-.modal-body .btn-md:hover{ transition: .5s; font-size: 104%; }
+.modal-body .btn-md{ transition: .2s; }
+.modal-body .btn-md:hover{ transition: .2s; font-size: 104%; }
 .modal-body img{
 	height: 220px;
 	width: 365px;
@@ -224,6 +226,20 @@ footer{
 }
 
 /*Screen Size Scaling*/
+
+@media (max-width: 2000px) {
+
+	#blackbox{margin-top: 10%;}
+	#bsa{margin-top: 10%;}
+
+}
+
+@media (max-width: 1660px) {
+
+	#blackbox{margin-top: 0%;}
+	#bsa{margin-top: 0%;}
+
+}
 
 @media (max-width: 1200px) { /*Large*/
 
