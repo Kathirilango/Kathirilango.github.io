@@ -153,10 +153,10 @@ html, body {
 	align-items: center;
 	margin-left: 25%;
 }
-#modal-workato .btn-primary{ background-color: #00C09D; border-color: #00C09D; color: white; }
-#modal-bsa .btn-primary{ background-color: #F2A900; border-color: #F2A900; color: black; }
-#modal-blackbox .btn-primary{ background-color: black; border-color: black; color: white; }
-#modal-eagle .btn-primary{ background-color: red; border-color: red; color: white; }
+#modal-workato .btn-primary{ background-color: #00C09D; border-color: #00C09D; color: white; -webkit-appearance: none; }
+#modal-bsa .btn-primary{ background-color: #F2A900; border-color: #F2A900; color: black; -webkit-appearance: none; }
+#modal-blackbox .btn-primary{ background-color: black; border-color: black; color: white; -webkit-appearance: none; }
+#modal-eagle .btn-primary{ background-color: red; border-color: red; color: white; -webkit-appearance: none; }
 
 /*Footer*/
 footer{
