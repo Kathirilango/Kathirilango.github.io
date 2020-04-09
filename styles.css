@@ -34,7 +34,7 @@ html, body {
 	font-size: 550%;
 	text-align: center;
 	padding-bottom: .5em;
-	font-family: "EB Garamond", serif;;
+	font-family: "EB Garamond", serif;
 }
 .quote-source{ font-size: 30%; }
 .caption{ padding-top: 5em; }
@@ -61,6 +61,7 @@ html, body {
 	transition: 0.5s;
 }
 .social .fa-linkedin:hover, .social .fa-github:hover, .social .fa-twitter:hover{ font-size: 1.3em; }
+.social, .continue { animation: 2s ease-out 0s 1 slideInFromBottom, fadeInAnimation ease 3s;}
 
 /*About Page*/
 #about{ background: rgba(255,255,255, 0.4); }
@@ -223,6 +224,16 @@ footer{
 @-o-keyframes "blink" {
   from, to { color: white; }
   50% { color: transparent; }
+}
+
+@keyframes slideInFromBottom {
+	0% { transform: translateY(100%); }
+	100% { transform: translateY(0); }
+}
+
+@keyframes fadeInAnimation { 
+	0% { opacity: 0; } 
+	100% { opacity: 1; } 
 }
 
 /*Screen Size Scaling*/
