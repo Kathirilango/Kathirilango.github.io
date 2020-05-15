@@ -17,6 +17,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -27,6 +29,34 @@
 
 <body>
 <div class="fixed-background"></div>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light"  id="nav">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="index.html"><img src="assets/kathir_logo_white.svg" style="width: 42.8px; height: 60.8px;"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#work">Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#projects">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
 
 <!--Home-->
 <div class="container-fluid fill">
@@ -42,114 +72,210 @@
 			<a href="https://github.com/kathirilango" target="_blank"><i class="fab fa-github"></i></a>
 			<a href="https://twitter.com/kathirilango11?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
 		</div>
-		<div class="col-12 continue">
-			<a href="#about">&darr; Continue</a>
-		</div>
 	</div>
 </div>
 
 <!--About-->
-<div class="container-fluid" id="about">
-	<div class="row padding">
+<div class="container-fluid padding about-fill" id="about">
+	<div class="row">
 		<div class="col-md-12 col-lg-3 tweet">
-			<h6>My Latest Tweet</h6>
+			<h6 style="color: white;">My Latest Tweet</h6>
 			<a class="twitter-timeline tw-align-center" href="https://twitter.com/kathirilango11" data-tweet-limit="1" data-width="399" data-chrome="nofooter noheader noborders noscrollbar"></a>
 		</div>
-		<div class="col-md-12 col-lg-5 txt-wrapper">
-			<h1 class="hdr-center">About Me</h1>
-			<hr>
-			<p>I’m a third year Computer Science and Engineering student at UCLA. I was born and raised in the Bay Area and my goal 
-				is to be a software developer full time. I have no particular interests within the field at the moment; my only interest 
-				is to learn as much as possible about various technologies and systems until I find a team or project to which I can best 
-				contribute.</p>
-			<p>On the side, I have a massive passion for sports. I’m a huge believer in sports analytics and the power of data science 
-				in the realm of athletics, and plan on making a difference in the field one day. The only time I throw analytics out 
-				the window is when the 49ers are concerned!</p>
+		<div class="col-md-12 col-lg-6 txt-wrapper">
+			<h2 class="hdr-left">About Me</h2>
+			<hr class="work-line">
+			<p>Hello! My name is Kathir Ilango and I'm currently a junior at UCLA, studying Computer Science and Engineering. My goal 
+				is to be a software developer, and I've been fortunate enough to gain industry experience over the summers through my 
+				first three years of college. In 2018 I worked at Avi Networks, a multicloud application delivery company, as an intern
+				writing test suites. In 2019 I worked at Workato, an integration automation company, as a software engineering intern
+				integrating AWS SNS into the company's platform.
+			</p>
+			<p> Outside of school, I've spent my entire life having a massive passion for sports. I like to play and watch almost
+				all of them, but football is the most special to me. I've grown up a diehard Niners fan and there are very few things in 
+				life that I would like to see more than them winning a Super Bowl. I'm also a huge fan of sports analytics. At UCLA, I'm
+				the Journalism Chair of Bruin Sports Analytics, overseeing the production of quarterly sports data science articles written
+				by our members and even writing some articles of my own. I'm a big believer in the power of data analytics and computer science 
+				within the realm of sports and hope to make a difference in the field one day. 
+			</p>
 		</div>
-		<div class="col-md-12 col-lg-4 img-wrapper">
+		<div class="col-md-12 col-lg-3 img-wrapper">
 			<img src="assets/me.jpg" class="img-fluid">
 		</div>
 	</div>
 </div>
 
-<!--Work-->
-
-<div class="container-fluid padding" id="work">
+<div class="container-fluid padding work-fill" id="work">
 	<div class="row welcome text-center">
-		<div class="col-12">
-			<h1 class="display-4">Experience and Projects</h1>
+		<div class="col-md-12 col-lg-8 col-xl-6 offset-xl-1">
+			<h2 class="hdr-left">Experience</h2>
 			<hr class="work-line">
 		</div>
-		<hr>
 	</div>
-	<div class="row">
-		<div class="col-xs-12 col-sm-6 col-xl-4" id="card-1">
-			<div class="card">
-					<img class="card-img-top" src="assets/office_bw.jpg">
-					<div class="card-img-overlay">
-						<h1 class="title" id="workato">Workato</h1>
-						<div class="subtitle">
-							<h4 class="subtitle-position">Software Engineer Intern</h4>
-							<h6 class="subtitle-info">Summer 2019 - Mountain View CA</h6>
-							<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-workato">Learn More</button>
-						</div>
-					</div>
+  <div class="row">
+	<div class="col-md-4 col-lg-2 col-xl-2 offset-xl-1 ul-padding">
+	  <div class="list-group" id="list-tab" role="tablist">
+		<a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-workato" role="tab" aria-controls="workato">Workato</a>
+		<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-avi" role="tab" aria-controls="profile">Avi Networks</a>
+		<a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-blackbox" role="tab" aria-controls="settings">BlackBox Trading</a>
+		<a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-bsa" role="tab" aria-controls="messages">Bruin Sports Analytics</a>
+	  </div>
+	</div>
+	<div class="col-md-8 col-lg-6 col-xl-4">
+	  <div class="tab-content" id="nav-tabContent">
+		<div class="tab-pane fade show active" id="list-workato" role="tabpanel" aria-labelledby="list-workato">
+			<h4>Workato</h4>
+			<h6><i>Software Engineer Intern &bull; Summer 2019</i></h6>
+			<ul>
+				<li>Integrated AWS SNS (Amazon pub/sub messaging system) into platform, allowing users to publish and subscribe to SNS topics as part of automated workflows</li>
+				<ul>
+					<li>Implemented authentication into AWS and creation of SNS client to use SNS features through Workato framework using AWS SDK Ruby API</li>
+					<li>Implemented webhook routing to poll for notifications on desired SNS topic and process the information to trigger workflows</li>
+				</ul>
+				<li>Integrated Harvest (time tracking software service) into platform, allowing users to create and manage clients, contacts, projects, tasks, time entries, expenses, and invoices as part of automated workflows</li>
+			</ul>
+		</div>
+		<div class="tab-pane fade" id="list-avi" role="tabpanel" aria-labelledby="list-avi">
+			<h4>Avi Networks</h4>
+			<h6><i>Software Engineer Intern &bull; Summer 2018</i></h6>
+			<ul>
+				<li>Wrote and modified test library to create, configure, and test Kubernetes (a containerization software) Objects on Avi Load Balancer using Kubernetes documentation</li>
+				<ul>
+					<li>Modified Openshift functions to be compatible with Kubernetes objects</li>
+					<li>Wrote new functions to bridge the gap and/or implement new Kubernetes objects</li>
+				</ul>
+				<li>Created new test suite that can be used to test Kubernetes ingress objects on Avi load balancer</li>
+			</ul>
+		</div>
+		<div class="tab-pane fade" id="list-bsa" role="tabpanel" aria-labelledby="list-bsa">
+			<h4>Bruin Sports Analytics</h4>
+			<h6><i>Journalism Chair & Website Manager &bull; 2017-Present</i></h6>
+			<ul>
+				<li>Manage production of quarterly sports data science articles written by Data Journalism Team by approving article proposals and providing feedback on analysis and data visualization</li>
+				<li>Write data journalism articles driven by statistics using Python and R to clean, organize, and present data</li>
+				<li>Publish articles to website (built on Jekyll framework)</li>
+			</ul>
+		</div>
+		<div class="tab-pane fade" id="list-blackbox" role="tabpanel" aria-labelledby="list-blackbox">
+			<h4>BlackBox Trading, LLC</h4>
+			<h6><i>Strategy Development &bull; 2018-Present</i></h6>
+			<ul>
+				<li>Developer on team creating systematic trading strategies based on statistical factors</li>
+				<li>Thorough backtesting over various data sets and stress events to minimize risk, development done through Quantopian API</li>
+				<li>Deployment of strategies through cloud PaaS to support scalability and resilience for broker integration</li>
+			</ul>
+		</div>
+	  </div>
+	</div>
+	<div class = "col-lg-4 col-xl-4" id="boxes">
+        <div class="key box white"></div><div class="key box blank"></div>
+        <div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div>
+        <div class="thinkey blank"></div>
+        <div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div>
+        <div class="thinkey blank"></div>
+        <div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div>
+		<div class="thinkey blank"></div>
+		<div class="key box white"></div><div class="key box white"></div><div class="key box white"></div>
+        <br>
+        <br>
+        <div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key backspace white"></div>
+		<div class="thinkey blank"></div>
+		<div class="key box white"></div><div class="key box white"></div><div class="key box white"></div>
+        <br>
+        <div class="key tab white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key tab white"></div>
+		<div class="thinkey blank"></div>
+		<div class="key box white"></div><div class="key box white"></div><div class="key box white"></div>
+        <br>
+        <div class="key caps white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key entershift white"></div>
+		<div class="thinkey blank"></div>
+		<div class="key box blank"></div><div class="key box blank"></div><div class="key box blank"></div>
+		<br>
+        <div class="key entershift white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key shift white"></div>
+		<div class="thinkey blank"></div>
+		<div class="key box blank"></div><div class="key box white"></div><div class="key box blank"></div>
+        <br>
+        <div class="key btnlong white"></div><div class="key btnlong white"></div><div class="key btnlong white"></div><div class="key space white"></div><div class="key btnlong white"></div><div class="key btnlong white"></div><div class="key btnlong white"></div><div class="key btnlong white"></div>
+		<div class="thinkey blank"></div>
+		<div class="key box white"></div><div class="key box white"></div><div class="key box white"></div>
+    </div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+	<script src="main.js"></script>
+  </div>
+</div>
+
+<div class="container-fluid padding about-fill" id="projects">
+	<div class="row welcome text-center justify-content-center">
+		<div class="col-lg-8 col-xl-4">
+			<h2 class="hdr-left">Projects</h2>
+			<hr class="work-line">
+		</div>
+	</div>
+	<div class="row padding">
+		<div class="col-sm-6 offset-sm-3 col-md-4 offset-md-0 col-lg-4 col-xl-3 offset-xl-2">
+			<div class="card border-0">
+				<a href="https://github.com/Kathirilango/Sports-Analytics/tree/master/receiver_cluster" target="_blank"><img class="card-img-top" src="assets/clusters.png"></a>
 			</div>
 		</div>
-		<div class="col-xs-12 col-sm-6 col-xl-4" id="card-2">
-			<div class="card">
-					<img class="card-img-top" src="assets/office_bw.jpg">
-					<div class="card-img-overlay">
-						<h1 class="title" id="avi">Avi Networks</h1>
-						<div class="subtitle">
-							<h4 class="subtitle-position">Software Engineer Intern</h4>
-							<h6 class="subtitle-info">Summer 2018 - Santa Clara CA</h6>
-							<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-avi">Learn More</button>
-						</div>
-					</div>
+		<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-0 col-lg-8 col-xl-5 align-self-center">
+			<div class="project-des">
+				<h4>Modern NFL Receiver Analysis</h4>
+				<p>This project looks at advanced NFL receiver data and performs a Principal Component Analysis and K-means Clustering to create a model that classifies
+					the receivers into various groups based on their numbers. The idea was to be able to use this to better understand the tiers of modern receivers in the 
+					NFL and how they differ from the traditional roles that have been around for years.
+				</p>
+				<a href="https://github.com/Kathirilango/Sports-Analytics/tree/master/receiver_cluster" target="_blank" type="button" class="btn btn-primary btn-sm">View Code</a>
 			</div>
 		</div>
-		<div class="col-xs-12 col-sm-6 col-xl-4" id="card-3">
-			<div class="card">
-				<img class="card-img-top" src="assets/basketball.jpg">
-				<div class="card-img-overlay">
-					<h1 class="title" id="bsa">Bruin Sports Analytics</h1>
-					<div class="subtitle">
-						<h4 class="subtitle-position">Journalism Chair</h4>
-						<h6 class="subtitle-info">2017 &rarr; Present - Los Angeles CA</h6>
-						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-bsa">Learn More</button>
-					</div>
-				</div>
+	</div>
+	<div class="row padding">
+		<div class="col-sm-6 offset-sm-3 col-md-4 offset-md-0 order-md-2 col-lg-4 col-xl-3">
+			<div class="card border-0">
+				<a href="https://github.com/Kathirilango/Sports-Analytics/tree/master/dvoa" target="_blank"><img class="card-img-top" src="assets/dvoa.png"></a>
 			</div>
 		</div>
-		<div class="col-xs-12 col-sm-6 col-xl-4" id="card-4">
-			<div class="card">
-				<img class="card-img-top" src="assets/wall_st.jpg">
-				<div class="card-img-overlay">
-					<h1 class="title" id="blackbox">BlackBox Trading, LLC</h1>
-					<div class="subtitle">
-						<h4 class="subtitle-position">Strategy Development</h4>
-						<h6 class="subtitle-info">2019 &rarr; Present - Fremont CA</h6>
-						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-blackbox">Learn More</button>
-					</div>
-				</div>
+		<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-0 order-md-1 col-lg-8 col-xl-5 offset-xl-2 align-self-center">
+			<div class="project-des">
+				<h4>DVOA Analysis</h4>
+				<p>Defense-adjusted Value Over Average is a football efficiency metric that compares the situational success of a given play to league-average results in 
+					that situation. This project scrapes DVOA data from the 1985 NFL season to the most recent season and creates a regression model that predicts the number 
+					of regular season games a team will win based on its team DVOA numbers.
+				</p>
+				<a href="https://github.com/Kathirilango/Sports-Analytics/tree/master/dvoa" target="_blank" type="button" class="btn btn-primary btn-sm">View Code</a>
 			</div>
 		</div>
-		<div class="col-xs-12 col-sm-6 col-xl-4" id="card-5">
-			<div class="card">
-				<img class="card-img-top" src="assets/eagle.jpg">
-				<div class="card-img-overlay">
-					<h1 class="title" id="eagle">Eagle Project</h1>
-					<div class="subtitle">
-						<h4 class="subtitle-position">Boy Scouts of America Troop 132</h4>
-						<h6 class="subtitle-info">2016 - Fremont CA</h6>
-						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-eagle">Learn More</button>
-					</div>
+	</div>
+	<div class="row padding">
+		<div class="col-sm-6 offset-sm-3 col-md-4 offset-md-0 col-lg-4 col-xl-3 offset-xl-2">
+			<div class="card border-0">
+				<a href="https://github.com/Kathirilango/Sports-Analytics/tree/master/positional_spending" target="_blank"><img class="card-img-top" src="assets/spending.png"></a>
+			</div>
+		</div>
+		<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-0 col-lg-8 col-xl-5 align-self-center">
+			<div class="project-des">
+				<h4>Positional Spending Analysis</h4>
+				<p>This project makes a model that determines a correct way for NFL teams to spend their money (or shows that positional spending has nothing to do with winning in the NFL). 
+					It scrapes positional spending data for every NFL team dating 
+					back to 2013 as well as win/loss data and creates a decision tree classification model 
+					that predicts which teams in the current or upcoming NFL season will win at least a certain number of games (specified by the user).
+				</p>
+				<a href="https://github.com/Kathirilango/Sports-Analytics/tree/master/positional_spending" target="_blank" type="button" class="btn btn-primary btn-sm">View Code</a>
+			</div>
+		</div>
+	</div>
+	<div class="row padding">
+		<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 align-self-center">
+			<div class="project-des">
+				<h4 style="text-align: center;">Other Projects/Articles</h4>
+				<div class="other-list">
+					<a href="https://bruinsportsanalytics.com/kyleshanahan" target="_blank" style="padding-right: 20px;">Kyle Shanahan</a>
+					<a href="https://bruinsportsanalytics.com/atptour" target="_blank" style="padding-right: 20px;">ATP Tour</a>
+					<a href="https://msnucleus.org/watersheds/tule/eagle/kathir_Ilango.htm" target="_blank">Eagle Project</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
 
 <!--Footer-->
 <footer>
@@ -162,89 +288,9 @@
 			<a data-toggle="popover" data-content="kathirilango11@gmail.com"><i class="far fa-envelope"></i></a>
 		</div>
 		<div class="col-12">Thank You</div>
+		<div class="col-12" style="font-size: 15px; font-family: Archivo;">Full Website Designed and Written by Kathir Ilango</div>
 	</div>
 </footer>
-
-<!--Modals for Work Cards-->
-<div id="modal-workato" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-body">
-				<h4 class="modal-title"><b>Workato</b></h4>
-				<p>Workato is an integration automation SAAS company. Through their platform, users can automate workflows using 
-					various apps by building ‘recipes’. A recipe is essentially a set of tasks that will execute when a trigger event 
-					occurs. My job as an intern was to integrate AWS Simple Notification Service (SNS) into the platform, thus allowing 
-					users to include SNS tasks in their recipes. As Workato’s code base is primarily built on Rails, I did all of my 
-					work in Ruby. As a bonus with this project, I was able to learn a great deal about AWS as well through having to 
-					navigate its documentation while working on the connector.</p>
-				<a href="https://www.workato.com/integrations/aws_sns" target="_blank" type="button" class="btn btn-primary btn-md">Workato SNS Integration</a>
-				<button style="float: right;" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="modal-avi" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-body">
-				<h4 class="modal-title"><b>Avi Networks</b></h4>
-				<p>Avi Networks is a multi-cloud application delivery company that was acquired by VMware in 2019. My job as an intern 
-					there was to integrate their testing libraries when they made the switch from Red Hat OpenShift to Google’s Kubernetes 
-					as their containerization software. While I wasn’t quite developing software the way I did at Workato the next year, I 
-					still learned a great deal by having to interact with Kubernetes on a daily basis and go through its documentation to 
-					implement functions of my own.</p>
-				<button style="float: right;" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="modal-bsa" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-body">
-				<h4 class="modal-title"><b>Bruin Sports Analytics</b></h4>
-				<img src="assets/qb_chart.jpg">
-				<br>
-				<p>Bruin Sports Analytics is UCLA’s sports data science club. It was created during my first year of college and I’ve been 
-					with it ever since. I currently serve as the journalism chair, managing the quarterly articles that are written for our 
-					website. I also currently run the website itself, adding and removing content as needed. Sports analytics has become one 
-					of my favorite hobbies over the past few years and I have written quite a few articles of my own for the club.</p>
-				<a href="https://www.bruinsportsanalytics.com/kyleshanahan" target="_blank" type="button" class="btn btn-primary btn-md">Check Out My Latest Work</a>
-				<button style="float: right;" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="modal-blackbox" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-body">
-				<h4 class="modal-title"><b>BlackBox Trading</b></h4>
-        <p>BlackBox Trading is a project that I’ve been working on with some friends for over a year now. Our team creates systematic 
-					trading strategies based on statistical factors. I didn’t have any knowledge of trading on the stock market before joining 
-					this project so it has been a very interesting endeavor for me and likely something I do for a long time to come. </p>
-				<a href="https://blackboxtradingca.com" target="_blank" type="button" class="btn btn-primary btn-md">Visit Website</a>
-				<button style="float: right;" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="modal-eagle" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-body">
-				<h4 class="modal-title"><b>Eagle Scout Project</b></h4>
-        <p>Eagle Scout is the highest attainable rank in Boy Scouting. The Eagle Project is something that all Eagle candidates must 
-					complete in order to become an Eagle Scout. The project generally encompasses heavy planning and leadership, as the candidate 
-					must lead a group of people to complete the project rather than simply do it on his own. For my project, I built a 30 foot 
-					retaining wall for a trail at Tule Ponds, an outdoor educational facility in my hometown of Fremont. The months of planning 
-					paid off, as we managed to successfully complete the entire project in one day.</p>
-				<a href="https://msnucleus.org/watersheds/tule/eagle/kathir_Ilango.htm" target="_blank" type="button" class="btn btn-primary btn-md">Official Project Documentation</a>
-				<button style="float: right;" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
 </body>
 
 <!--Scripts-->
