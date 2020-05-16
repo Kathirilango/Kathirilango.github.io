@@ -126,7 +126,7 @@ html, body {
 #nav-tabContent{ color: white; }
 
 /*Projects*/
-.card-img-top{ filter: brightness(20%); transition: 1s;}
+.card-img-top{ filter: brightness(40%); transition: 1s;}
 .card-img-overlay{ text-align: center; justify-content: center; align-items: center; }
 .img-darken { transition: 1s; filter: brightness(100%); }
 .project-des{ color: white}
