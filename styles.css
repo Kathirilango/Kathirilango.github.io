@@ -122,7 +122,7 @@ html, body {
 }
 
 .ul-padding{ padding-top: 1rem; padding-bottom: 2rem; padding-left: 0rem;}
-#work ul { list-style-type: square; }
+#work ul { list-style-type: disc; }
 #nav-tabContent{ color: white; }
 
 /*Projects*/
