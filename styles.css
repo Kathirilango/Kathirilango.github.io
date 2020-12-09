@@ -7,8 +7,8 @@ html, body {
 }
 
 /*Navbar*/
-#nav{ background-color: rgba(255,255,255, 0.0) !important;}
-.navbar{ padding: .8rem; }
+#nav{ background-color: rgba(255,255,255, 0.0) !important; }
+.navbar{ padding: .8rem; border: none;}
 .navbar-nav li{
 	padding-left: 20px;
 	padding-right: 20px;
@@ -23,7 +23,25 @@ html, body {
 	color: rgb(216, 216, 216) !important;
 	transition: 0.3s !important;
 }
-.navbar-toggler{ background-color: white !important; }
+.navbar-toggler{ 
+	background-color:transparent !important; 
+	border-color:transparent !important; 
+	border-width: 2px !important;
+}
+
+.navbar-toggler-icon { 
+	background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important; 
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.navbar-collapse{ border-radius: 10px !important; }
 
 .fixed-background {
 	background-image: url("assets/sunset.jpg");
