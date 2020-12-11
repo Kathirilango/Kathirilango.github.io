@@ -140,8 +140,20 @@ html, body {
 }
 
 .ul-padding{ padding-top: 1rem; padding-bottom: 2rem; padding-left: 0rem;}
-#work ul { list-style-type: disc; }
 #nav-tabContent{ color: white; }
+
+#work ul {
+	padding-left: 10px;
+   	text-indent: 2px;
+   	list-style: none;
+   	list-style-position: outside;
+}
+  
+#work ul li:before {
+	content: '✓';
+	margin-left: -1em;
+    margin-right: .100em;
+}
 
 /*Projects*/
 .card{border-radius:1.2rem; border:none; background-color: transparent;}
