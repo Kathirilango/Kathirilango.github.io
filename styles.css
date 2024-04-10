@@ -81,11 +81,11 @@ html, body {
   font-size: 4.5em;
 	margin: 3rem;
 }
-.social .fa-linkedin,.social .fa-github,.social .fa-twitter{
+.social .fa-linkedin,.social .fa-github,.social .fa-instagram{
 	color: white;
 	transition: 0.5s;
 }
-.social .fa-linkedin:hover, .social .fa-github:hover, .social .fa-twitter:hover{ font-size: 1.3em; }
+.social .fa-linkedin:hover, .social .fa-github:hover, .social .fa-instagram:hover{ font-size: 1.3em; }
 .social, .continue { animation: 2s ease-out 0s 1 slideInFromBottom, fadeInAnimation ease 3s;}
 
 /*About Page*/
@@ -93,14 +93,9 @@ html, body {
 .about-fill{min-height:70%}
 .hdr-left{ text-align: left; color:white; font-family: "Archivo", sans-serif;}
 .txt-wrapper{ padding-left: 50px; padding-right: 0px; color: white;}
-.twitter-timeline{ position: relative; }
 .img-fluid{border-radius: 10px;}
-.img-wrapper{ padding-left: 50px; padding-right: 50px; }
-.tweet{
-	padding-left: 50px;
-	padding-right: 0px;
-	text-align: center;
-}
+.img-wrapper{ padding-left: 50px; padding-right: 50px; padding-top: 20px; padding-bottom: 20px;}
+
 
 /*Work*/
 #work{ background: none; }
@@ -198,7 +193,7 @@ footer{
 }
 .social-footer .fa-linkedin, 
 .social-footer .fa-github, 
-.social-footer .fa-twitter, 
+.social-footer .fa-instagram, 
 .social-footer .fa-envelope{
 	color: white;
 	padding-left: 10px;
@@ -206,7 +201,7 @@ footer{
 }
 .social-footer .fa-linkedin:hover{ color: #0E76A8; } 
 .social-footer .fa-github:hover{ color: black; }
-.social-footer .fa-twitter:hover{ color: #00ACEE; } 
+.social-footer .fa-instagram:hover{ color: #00ACEE; } 
 .social-footer .fa-envelope:hover{ color: black; }
 .fa-arrow-alt-circle-up:hover{ font-size: 130%; transition: 0.5s; }
 
