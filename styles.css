@@ -134,7 +134,7 @@ html, body {
 	font-weight: bold;
 }
 
-.ul-padding{ padding-top: 1rem; padding-bottom: 2rem; padding-left: 0rem;}
+.ul-padding{ padding-top: 0rem; padding-bottom: 2rem; padding-left: 0rem;}
 #nav-tabContent{ color: white; }
 
 #work ul {
