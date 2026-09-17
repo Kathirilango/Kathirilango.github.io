@@ -1,175 +1,50 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162442225-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-162442225-1');
-	</script>
-
-	<meta charset='UTF-8'>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Kathir Ilango</title>
-	<link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-  	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="styles.css" rel="stylesheet">
-	<link rel="shortcut icon" href="assets/kathir_logo.svg" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kathir Ilango — engineer in Seattle, photographer, and lover of the outdoors.">
+  <meta name="theme-color" content="#233c46">
+  <title>Kathir Ilango</title>
+  <link rel="icon" href="assets/kathir_logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=2.8">
+  <script src="content.js?v=2.9" defer></script>
+  <script src="js/content.js?v=2.7" defer></script>
+  <script src="js/main.js?v=2.7" defer></script>
 </head>
-
 <body>
-<noscript><p style="background: white; padding: 1rem;">Please enable JavaScript to view the biography and experience sections.</p></noscript>
-<div class="fixed-background"></div>
-
-<nav class="navbar navbar-inverse navbar-expand-md navbar-dark bg-dark"  id="nav">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="index.html"><img src="assets/kathir_logo_white.svg" style="width: 52.2px; height: 76.2px;"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="#about">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#work">Experience</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#projects">Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" data-link="instagram" href="https://www.instagram.com/thecanoncowboy/" target="_blank">Photography</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
-
-<!--Home-->
-<div class="container-fluid fill">
-	<div class="row caption">
-		<div class="col-12">
-			<h3 class="quote"><i><b data-content="greeting"></b>    <span class="quote-source" data-content="attribution"></span></i></h3>
-		</div>
-		<div class="col-12">
-			<h1 class="display-2" id="type_text"><span class="blinking-cursor">|</span></h1>
-		</div>
-		<div class="col-12 social">
-			<a data-link="linkedin" href="https://www.linkedin.com/in/kathirilango" target="_blank"><i class="fab fa-linkedin"></i></a>
-			<a data-link="github" href="https://github.com/kathirilango" target="_blank"><i class="fab fa-github"></i></a>
-			<a data-link="instagram" href="https://www.instagram.com/thecanoncowboy/" target="_blank"><i class="fab fa-instagram"></i></a>
-		</div>
-	</div>
-</div>
-
-<!--About-->
-<div class="container-fluid padding about-fill" id="about">
-	<div class="row">
-		<div class="col-md-12 col-lg-3 img-wrapper">
-			<br>
-			<br>
-			<img data-portrait="0" src="assets/me.jpg" class="img-fluid">
-		</div>
-		<div class="col-md-12 col-lg-6 txt-wrapper">
-			<h2 class="hdr-left">About Me</h2>
-			<hr class="work-line">
-			<p data-content="about_paragraph_1"></p>
-			<p data-content="about_paragraph_2"></p>
-			<p data-content="about_paragraph_3"></p>
-		</div>
-		<div class="col-md-12 col-lg-3 img-wrapper">
-			<br>
-			<br>
-			<img data-portrait="1" src="assets/me2.jpg" class="img-fluid">
-		</div>
-	</div>
-</div>
-
-<div class="container-fluid padding work-fill" id="work">
-	<div class="row welcome text-center">
-		<div class="col-md-12 col-lg-8 col-xl-6 offset-xl-1">
-			<h2 class="hdr-left">Experience</h2>
-			<hr class="work-line">
-		</div>
-	</div>
-  <div class="row">
-	<div class="col-md-4 col-lg-2 col-xl-2 offset-xl-1 ul-padding">
-	  <div class="list-group" id="list-tab" role="tablist">
-		<a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-stripe" role="tab" aria-controls="workato">Stripe</a>
-		<a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-microsoft" role="tab" aria-controls="workato">Microsoft</a>
-		<a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-workato" role="tab" aria-controls="workato">Workato</a>
-		<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-avi" role="tab" aria-controls="profile">Avi Networks</a>
-		<a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-blackbox" role="tab" aria-controls="settings">BlackBox Trading</a>
-		<a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-bsa" role="tab" aria-controls="messages">Bruin Sports Analytics</a>
-	  </div>
-	</div>
-	<div class="col-md-8 col-lg-6 col-xl-4">
-	  <div class="tab-content" id="nav-tabContent">
-		<div class="tab-pane fade show active" id="list-stripe" role="tabpanel" aria-labelledby="list-stripe">
-			<h4 data-content="stripe_company_1"></h4>
-			<h6><i data-content="stripe_role_1"></i></h6>
-			<p data-content="stripe_paragraph_1"></p>
-		</div>
-		<div class="tab-pane fade" id="list-microsoft" role="tabpanel" aria-labelledby="list-microsoft">
-			<h4 data-content="microsoft_company_1"></h4>
-			<h6><i data-content="microsoft_role_1"></i></h6>
-			<p data-content="microsoft_paragraph_1"></p>
-			<h6><i data-content="microsoft_role_2"></i></h6>
-			<p data-content="microsoft_paragraph_2"></p>
-		</div>
-		<div class="tab-pane fade" id="list-workato" role="tabpanel" aria-labelledby="list-workato">
-			<h4 data-content="workato_company_1"></h4>
-			<h6><i data-content="workato_role_1"></i></h6>
-			<p data-content="workato_paragraph_1"></p>
-			<ul>
-				<li data-content="workato_highlight_1"></li>
-				<li data-content="workato_highlight_2"></li>
-			</ul>
-		</div>
-		<div class="tab-pane fade" id="list-avi" role="tabpanel" aria-labelledby="list-avi">
-			<h4 data-content="avi_company_1"></h4>
-			<h6><i data-content="avi_role_1"></i></h6>
-			<p data-content="avi_paragraph_1"></p>
-			<ul>
-				<li data-content="avi_highlight_1"></li>
-				<li data-content="avi_highlight_2"></li>
-			</ul>
-		</div>
-		<div class="tab-pane fade" id="list-bsa" role="tabpanel" aria-labelledby="list-bsa">
-			<h4 data-content="bsa_company_1"></h4>
-			<h6><i data-content="bsa_role_1"></i></h6>
-			<p data-content="bsa_paragraph_1"></p>
-			<h6><i data-content="bsa_role_2"></i></h6>
-			<p data-content="bsa_paragraph_2"></p>
-			<h6><i data-content="bsa_role_3"></i></h6>
-			<p data-content="bsa_paragraph_3"></p>
-		</div>
-		<div class="tab-pane fade" id="list-blackbox" role="tabpanel" aria-labelledby="list-blackbox">
-			<h4 data-content="blackbox_company_1"></h4>
-			<h6><i data-content="blackbox_role_1"></i></h6>
-			<p data-content="blackbox_paragraph_1"></p>
-			<ul>
-				<li data-content="blackbox_highlight_1"></li>
-				<li data-content="blackbox_highlight_2"></li>
-			</ul>
-		</div>
-	  </div>
-	</div>
-	<div class = "col-lg-4 col-xl-4" id="boxes">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="opening" id="top">
+    <header class="site-header wrap">
+      <a class="brand" href="#top" aria-label="Kathir Ilango, home"><img src="assets/kathir_logo_white.svg" width="48" height="48" alt=""><span>Kathir Ilango</span></a>
+      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#photography">Photos</a><a href="#work">Work</a><a href="#contact">Say hello <span aria-hidden="true">↗</span></a></nav>
+    </header>
+    <section class="hero wrap" aria-labelledby="intro">
+      <div class="hero-copy">
+        <div class="greeting"><span data-content="greeting">Oh, hey there!</span><span class="attribution" data-content="attribution">-George Kittle</span></div>
+        <h1 id="intro">I'm Kathir.</h1>
+        <p class="hero-description" data-content="hero_description"></p>
+        <a class="hero-link" href="#about">A little more about me <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="hero-photo"><img data-portrait="1" src="assets/me2.jpg" width="3022" height="3022" alt="Kathir hiking above a mountain lake." fetchpriority="high"><figcaption data-content="hero_caption"></figcaption></figure>
+    </section>
+    <div class="hero-bottom wrap"><span data-content="location"></span><span data-content="origins"></span></div>
+  </div>
+  <main id="main">
+    <section class="about section wrap" id="about" aria-labelledby="about-title">
+      <div class="about-photo"><img data-portrait="0" src="assets/me.jpg" width="3024" height="3024" loading="lazy" alt="Kathir smiling in front of a temple and autumn trees."></div>
+      <div class="about-copy"><p class="eyebrow">The person behind the page</p><h2 id="about-title" data-content="about_title"></h2><p data-content="about_paragraph_1"></p><p data-content="about_paragraph_2"></p><p class="personal-note" data-content="about_paragraph_3"></p></div>
+    </section>
+    <section class="photography section" id="photography" aria-labelledby="photo-title">
+      <div class="wrap"><div class="section-heading"><div><p class="eyebrow">Photography &amp; the outdoors</p><h2 id="photo-title" data-content="gallery_title"></h2><p data-content="gallery_description"></p></div><a class="text-link" data-link="instagram" href="https://www.instagram.com/thecanoncowboy/" target="_blank" rel="noopener noreferrer">More on Instagram <span aria-hidden="true">↗</span></a></div>
+      <div class="gallery" id="gallery" aria-label="Selected photographs"></div>
+      <noscript><p>Enable JavaScript to load the gallery and career details. You can also find my photos on Instagram.</p></noscript>
+      </div>
+    </section>
+    <section class="work section wrap" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow">Engineering</p><h2 id="work-title" data-content="work_title"></h2><p data-content="work_description"></p></div></div>
+      <div class="work-layout"><div class="career"><div id="job-tabs" class="job-tabs" role="tablist" aria-label="Experience"></div><div id="job-panels"></div></div>
+      <figure class="keyboard-figure"><div class="keyboard-stage"><div id="boxes" aria-hidden="true">
         <div class="key box white"></div><div class="key box blank"></div>
         <div class="key box white"></div><div class="key box white"></div><div class="key box white"></div><div class="key box white"></div>
         <div class="thinkey blank"></div>
@@ -198,105 +73,10 @@
         <br>
         <div class="key btnlong white"></div><div class="key btnlong white"></div><div class="key btnlong white"></div><div class="key space white"></div><div class="key btnlong white"></div><div class="key btnlong white"></div><div class="key btnlong white"></div><div class="key btnlong white"></div>
 		<div class="thinkey blank"></div>
-		<div class="key box white"></div><div class="key box white"></div><div class="key box white"></div>
-    </div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
-
-  </div>
-</div>
-
-<div class="container-fluid padding about-fill" id="projects">
-	<div class="row welcome text-center justify-content-center">
-		<div class="col-lg-8 col-xl-4">
-			<h2 class="hdr-left">Projects</h2>
-			<hr class="work-line">
-		</div>
-	</div>
-	<div class="row padding">
-		<div class="col-sm-6 offset-sm-3 col-md-4 offset-md-0 col-lg-4 col-xl-3 offset-xl-2">
-			<div class="card">
-				<a href="https://www.bruinsportsanalytics.com/modernreceivers" target="_blank"><img class="card-img-top" src="assets/clusters.png"></a>
-			</div>
-		</div>
-		<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-0 col-lg-8 col-xl-5 align-self-center">
-			<div class="project-des">
-				<h4>Modern NFL Receiver Analysis</h4>
-				<p>This project looks at advanced NFL receiver data and performs a Principal Component Analysis and K-means Clustering to create a model that classifies
-					the receivers into various groups based on their numbers. My idea was to be able to use this to better understand the tiers of modern receivers in the 
-					NFL and how they differ from the traditional roles that have been around for years.
-				</p>
-				<p>
-				<a href="https://www.bruinsportsanalytics.com/modernreceivers" target="_blank" type="button" class="btn btn-primary btn-sm">Read Article</a>
-				<a href="https://github.com/Kathirilango/Sports-Analytics/tree/master/receiver_cluster" target="_blank" type="button" class="btn btn-primary btn-sm">View Code</a>
-				</p>
-			</div>
-		</div>
-	</div>
-	<div class="row padding">
-		<div class="col-sm-6 offset-sm-3 col-md-4 offset-md-0 order-md-2 col-lg-4 col-xl-3">
-			<div class="card">
-				<a href="https://github.com/Kathirilango/Sports-Analytics/tree/master/dvoa" target="_blank"><img class="card-img-top" src="assets/dvoa.png"></a>
-			</div>
-		</div>
-		<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-0 order-md-1 col-lg-8 col-xl-5 offset-xl-2 align-self-center">
-			<div class="project-des">
-				<h4>DVOA Analysis</h4>
-				<p>Defense-adjusted Value Over Average is a football efficiency metric that compares the situational success of a given play to league-average results in 
-					that situation. This project scrapes DVOA data from the 1985 NFL season to the most recent season and creates a regression model that predicts the number 
-					of regular season games a team will win based on its team DVOA numbers.
-				</p>
-				<a href="https://github.com/Kathirilango/Sports-Analytics/tree/master/dvoa" target="_blank" type="button" class="btn btn-primary btn-sm">View Code</a>
-			</div>
-		</div>
-	</div>
-	<div class="row padding">
-		<div class="col-sm-6 offset-sm-3 col-md-4 offset-md-0 col-lg-4 col-xl-3 offset-xl-2">
-			<div class="card">
-				<a href="https://bruinsportsanalytics.com/atptour" target="_blank"><img class="card-img-top" src="assets/atp_top10.png"></a>
-			</div>
-		</div>
-		<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-0 col-lg-8 col-xl-5 align-self-center">
-			<div class="project-des">
-				<h4>ATP Tour Analysis</h4>
-				<p>This article looks at the structure of the men's professional tennis circuit and takes a statistical approach to determine the what it takes to become the World Number 1 tennis player. With my buddy Kevin, I analyze the careers of the Big 3, their tendencies in tournament scheduling, and how they have optimized their ATP rankings through efficient planning and performance. We then use this information to assess the tennis landscape and what ultimately is required to be the best tennis player on Earth.
-				</p>
-				<a href="https://www.bruinsportsanalytics.com/atptour" target="_blank" type="button" class="btn btn-primary btn-sm">Read Article</a>
-			</div>
-		</div>
-	</div>
-	<div class="row padding">
-		<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 align-self-center">
-			<div class="project-des">
-				<h4 style="text-align: center;">Other Projects/Articles</h4>
-				<div class="other-list">
-					<a href="https://bruinsportsanalytics.com/kyleshanahan" target="_blank" style="padding-right: 20px;">Kyle Shanahan - Football</a>
-					<a href="https://bruinsportsanalytics.com/mexicanStyle" target="_blank" style="padding-right: 20px;">Mexican Style - Boxing</a>
-					<a href="https://msnucleus.org/watersheds/tule/eagle/kathir_Ilango.htm" target="_blank">Eagle Project - Boy Scouts</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<!--Footer-->
-<footer>
-	<div class="container-fluid" id="contact">
-		<div class="col-12"><a href="#"><i class="far fa-arrow-alt-circle-up"></i></a></div>
-		<div class="col-12 social-footer">
-			<a data-link="linkedin" href="https://www.linkedin.com/in/kathirilango" target="_blank"><i class="fab fa-linkedin"></i></a>
-			<a data-link="github" href="https://github.com/kathirilango" target="_blank"><i class="fab fa-github"></i></a>
-			<a data-link="instagram" href="https://www.instagram.com/thecanoncowboy/" target="_blank"><i class="fab fa-instagram"></i></a>
-			<a data-toggle="popover" data-email><i class="far fa-envelope"></i></a>
-		</div>
-		<div class="col-12">Thank You</div>
-		<div class="col-12" style="font-size: 15px; font-family: Archivo;">Full Website Designed and Written by Kathir Ilango</div>
-	</div>
-</footer>
+		<div class="key box white"></div><div class="key box white"></div><div class="key box white"></div></div></div><figcaption><span data-content="keyboard_caption"></span><button type="button" id="motion-toggle" aria-pressed="false">Pause animation</button></figcaption></figure></div>
+    </section>
+  </main>
+  <footer id="contact" class="contact"><div class="wrap"><div class="contact-main"><div><p class="eyebrow">Keep in touch</p><h2 data-content="contact_title"></h2><p data-content="contact_description"></p></div><a class="email-link" data-email href="mailto:kathirilango11@gmail.com">Say hello <span aria-hidden="true">↗</span></a></div><div class="footer-bottom"><p data-content="footer_note"></p><nav aria-label="Social links"><a data-link="instagram" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a data-link="github" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a data-link="linkedin" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="#top">Back to top ↑</a></nav></div></div></footer>
+  <dialog id="photo-viewer" aria-labelledby="viewer-caption"><div class="viewer-toolbar"><span id="viewer-count"></span><button id="viewer-close" type="button" autofocus aria-label="Close photograph">Close <span aria-hidden="true">×</span></button></div><figure><img id="viewer-image" alt=""><figcaption id="viewer-caption"></figcaption></figure><div class="viewer-navigation"><button id="viewer-prev" type="button" aria-label="Previous photograph">← Previous</button><button id="viewer-next" type="button" aria-label="Next photograph">Next →</button></div></dialog>
 </body>
-
-<!--Scripts-->
-<script src="content.js"></script>
-<script src="js/content.js"></script>
-<script src="js/main.js"></script>
 </html>

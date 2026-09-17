@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1100" fill="none">
+  <!-- Original abstract landscape drawn for Kathir's website. -->
+  <defs>
+    <linearGradient id="sky" x1="900" y1="0" x2="900" y2="1100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#233c46"/>
+      <stop offset=".52" stop-color="#405b62"/>
+      <stop offset=".85" stop-color="#927f70"/>
+      <stop offset="1" stop-color="#c6a184"/>
+    </linearGradient>
+    <radialGradient id="last-light" cx="0" cy="0" r="1" gradientTransform="translate(1460 620) rotate(160) scale(820 440)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e5bda0" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#e5bda0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1800v1100H0z"/>
+  <path fill="url(#last-light)" d="M0 0h1800v1100H0z"/>
+  <path fill="#718583" fill-opacity=".55" d="M0 730 120 695 210 713 370 584 418 615 468 562 548 648 675 710 785 684 904 611 960 636 1080 498 1140 552 1182 532 1300 635 1450 685 1555 582 1610 620 1690 572 1800 657V1100H0Z"/>
+  <path fill="#4d6b6c" d="M0 838 150 751 226 784 344 698 409 739 480 702 588 791 686 772 800 829 926 774 1040 702 1108 728 1230 670 1310 724 1420 758 1540 717 1650 777 1800 710V1100H0Z"/>
+  <path fill="#34565a" d="M0 904 160 871 290 823 378 851 496 808 615 858 738 831 846 876 990 819 1110 850 1220 802 1360 857 1480 813 1590 842 1720 793 1800 826V1100H0Z"/>
+  <path fill="#244247" d="M0 958Q180 865 358 929T690 934Q851 875 1030 948T1380 930Q1580 889 1800 954V1100H0Z"/>
+  <path fill="#20393e" d="M0 1028Q230 965 410 1013T816 1007Q1040 962 1240 1020T1800 990V1100H0Z"/>
+</svg>
