@@ -102,45 +102,45 @@
   document.addEventListener('visibilitychange', updateMotion);
   updateMotion();
 
-  // Check the numbered files once on load. Only available photographs appear.
-  // Six clearly labeled placeholders let the initial layout be reviewed.
+  // Reserve known photo dimensions immediately and let each image load on its
+  // own. Optional numbered slots are checked only near the gallery.
   const gallery = document.getElementById('gallery');
-  function showPlaceholders() {
-    for (let index = 0; index < 6; index++) {
-      const placeholder = document.createElement('div');
-      placeholder.className = `gallery-item photo-placeholder${[1,2,5].includes(index) ? ' tall' : ''}`;
-      const number = document.createElement('span');
-      number.className = 'placeholder-number';
-      number.textContent = String(index + 1).padStart(2, '0');
-      const label = document.createElement('span');
-      label.className = 'placeholder-label';
-      label.textContent = 'Photo placeholder';
-      placeholder.append(number, label);
-      gallery.append(placeholder);
-    }
-  }
-  showPlaceholders();
   const viewer = document.getElementById('photo-viewer');
   const viewerImage = document.getElementById('viewer-image');
   const viewerCaption = document.getElementById('viewer-caption');
   const viewerCount = document.getElementById('viewer-count');
   const previous = document.getElementById('viewer-prev');
   const next = document.getElementById('viewer-next');
-  let photographs = [];
-  let selectedPhoto = 0;
+  const phoneLayout = matchMedia('(max-width: 700px)');
+  const photographs = window.siteContent.gallery.filter(photo => photo.src).map(photo => ({
+    ...photo, loaded: false, failed: false, knownSize: photo.width > 0 && photo.height > 0
+  }));
+  let selectedPhoto;
   let opener;
-  function displayPhoto(index) {
-    selectedPhoto = (index + photographs.length) % photographs.length;
-    const photo = photographs[selectedPhoto];
-    viewerImage.src = photo.src;
-    viewerImage.alt = photo.alt || photo.caption || `Photograph ${selectedPhoto + 1}`;
-    viewerCaption.textContent = photo.caption || photo.alt || `Photograph ${selectedPhoto + 1}`;
-    viewerCount.textContent = `${selectedPhoto + 1} / ${photographs.length}`;
-    previous.disabled = next.disabled = photographs.length < 2;
+  const availablePhotos = () => photographs.filter(photo => photo.loaded && !photo.failed);
+
+  function updateViewerControls() {
+    const available = availablePhotos();
+    viewerCount.textContent = `${available.indexOf(selectedPhoto) + 1} / ${available.length}`;
+    previous.disabled = next.disabled = available.length < 2;
   }
-  function openPhoto(index, button) {
+  function displayPhoto(photo) {
+    selectedPhoto = photo;
+    viewerImage.src = photo.src;
+    viewerImage.alt = photo.image.alt;
+    viewerCaption.textContent = photo.caption || photo.image.alt;
+    updateViewerControls();
+  }
+  function navigatePhoto(direction) {
+    const available = availablePhotos();
+    if (!available.length) return;
+    const index = (available.indexOf(selectedPhoto) + direction + available.length) % available.length;
+    displayPhoto(available[index]);
+  }
+  function openPhoto(photo, button) {
+    if (!photo.loaded) return;
     opener = button;
-    displayPhoto(index);
+    displayPhoto(photo);
     viewer.showModal();
     document.body.classList.add('viewer-open');
   }
@@ -153,59 +153,100 @@
     const bounds = viewer.getBoundingClientRect();
     if (event.target === viewer && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) viewer.close();
   });
-  previous.addEventListener('click', () => displayPhoto(selectedPhoto - 1));
-  next.addEventListener('click', () => displayPhoto(selectedPhoto + 1));
+  previous.addEventListener('click', () => navigatePhoto(-1));
+  next.addEventListener('click', () => navigatePhoto(1));
   viewer.addEventListener('keydown', event => {
+    if (event.key === 'Tab') {
+      const controls = [...viewer.querySelectorAll('button:not([disabled])')];
+      const first = controls[0];
+      const last = controls[controls.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
     if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
       event.preventDefault();
-      displayPhoto(selectedPhoto + (event.key === 'ArrowLeft' ? -1 : 1));
+      navigatePhoto(event.key === 'ArrowLeft' ? -1 : 1);
     }
   });
-  Promise.all(window.siteContent.gallery.filter(photo => photo.src).map(photo => new Promise(resolve => {
+
+  function arrangeRows() {
+    const focused = document.activeElement;
+    const figures = photographs.filter(photo => !photo.failed && (photo.knownSize || photo.loaded)).map(photo => photo.figure);
+    const perRow = phoneLayout.matches ? 2 : 3;
+    const rows = [];
+    for (let index = 0; index < figures.length; index += perRow) {
+      const row = document.createElement('div');
+      row.className = 'gallery-row';
+      row.append(...figures.slice(index, index + perRow));
+      rows.push(row);
+    }
+    gallery.replaceChildren(...rows);
+    if (!rows.length && photographs.every(photo => photo.failed)) {
+      const empty = document.createElement('p');
+      empty.textContent = 'Photos are unavailable right now. You can find more on Instagram.';
+      gallery.append(empty);
+    }
+    if (focused?.matches('#gallery button') && focused.isConnected && !viewer.open) focused.focus({ preventScroll: true });
+  }
+
+  photographs.forEach((photo, index) => {
+    const figure = document.createElement('figure');
+    figure.className = 'gallery-item is-loading';
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.disabled = true;
+    button.setAttribute('aria-label', `Enlarge ${photo.alt || photo.caption || `photograph ${index + 1}`}`);
     const image = new Image();
-    image.onload = () => resolve({ ...photo, image });
-    image.onerror = () => resolve(null);
-    image.src = photo.src;
-  }))).then(results => {
-    photographs = results.filter(Boolean);
-    if (!photographs.length) return;
-    gallery.replaceChildren();
-    const figures = photographs.map((photo, index) => {
-      const figure = document.createElement('figure');
-      figure.className = 'gallery-item';
-      figure.style.setProperty('--photo-ratio', photo.image.naturalWidth / photo.image.naturalHeight);
-      const button = document.createElement('button');
-      button.type = 'button';
-      button.setAttribute('aria-label', `Enlarge ${photo.alt || photo.caption || `photograph ${index + 1}`}`);
-      photo.image.alt = photo.alt || photo.caption || `Photograph ${index + 1}`;
-      photo.image.width = photo.image.naturalWidth;
-      photo.image.height = photo.image.naturalHeight;
-      button.append(photo.image);
-      button.addEventListener('click', () => openPhoto(index, button));
-      figure.append(button);
-      if (photo.caption) {
-        const caption = document.createElement('figcaption');
-        caption.textContent = photo.caption;
-        figure.append(caption);
-      }
-      return figure;
-    });
-    // Equal-height rows preserve every photo's full composition. On phones,
-    // regroup the same figures into pairs; viewer order follows reading order.
-    const phoneLayout = matchMedia('(max-width: 700px)');
-    function arrangeRows() {
-      const perRow = phoneLayout.matches ? 2 : 3;
-      const rows = [];
-      for (let index = 0; index < figures.length; index += perRow) {
-        const row = document.createElement('div');
-        row.className = 'gallery-row';
-        row.append(...figures.slice(index, index + perRow));
-        rows.push(row);
-      }
-      gallery.classList.add('gallery-loaded');
-      gallery.replaceChildren(...rows);
+    image.alt = photo.alt || photo.caption || `Photograph ${index + 1}`;
+    image.decoding = 'async';
+    if (photo.knownSize) {
+      image.width = photo.width;
+      image.height = photo.height;
+      image.loading = 'lazy';
+      figure.style.setProperty('--photo-ratio', photo.width / photo.height);
     }
-    phoneLayout.addEventListener('change', arrangeRows);
-    arrangeRows();
+    photo.figure = figure;
+    photo.image = image;
+    button.append(image);
+    button.addEventListener('click', () => openPhoto(photo, button));
+    figure.append(button);
+    if (photo.caption) {
+      const caption = document.createElement('figcaption');
+      caption.textContent = photo.caption;
+      figure.append(caption);
+    }
+    image.onload = () => {
+      photo.loaded = true;
+      image.width = image.naturalWidth;
+      image.height = image.naturalHeight;
+      figure.style.setProperty('--photo-ratio', image.naturalWidth / image.naturalHeight);
+      figure.classList.remove('is-loading');
+      button.disabled = false;
+      // Known slots are already laid out: no rebuild, flicker, or focus loss.
+      if (!photo.knownSize) arrangeRows();
+      if (viewer.open) updateViewerControls();
+    };
+    image.onerror = () => {
+      photo.failed = true;
+      arrangeRows();
+    };
   });
+  gallery.classList.add('gallery-loaded');
+  arrangeRows();
+  photographs.filter(photo => photo.knownSize).forEach(photo => { photo.image.src = photo.src; });
+  const optionalSlots = photographs.filter(photo => !photo.knownSize);
+  if (optionalSlots.length) {
+    const optionalObserver = new IntersectionObserver(entries => {
+      if (!entries.some(entry => entry.isIntersecting)) return;
+      optionalObserver.disconnect();
+      optionalSlots.forEach(photo => { photo.image.src = photo.src; });
+    }, { rootMargin: '300px' });
+    optionalObserver.observe(gallery);
+  }
+  phoneLayout.addEventListener('change', arrangeRows);
 })();

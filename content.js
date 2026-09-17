@@ -1,7 +1,7 @@
 // YOUR SITE CONTENT — edit the quoted text, keeping commas and quotation marks.
-// This checkpoint includes draft wording for your review. Plain text only; no HTML.
+// Plain text only; no HTML.
 // Add JPEGs at assets/gallery/01.jpg through 09.jpg, then refresh.
-// Missing slots stay hidden. With no photos, six labeled layout placeholders appear.
+// Missing slots stay hidden. Width and height reserve space while photos load.
 // To use another filename, change src below. Add alt descriptions; captions are optional.
 window.siteContent = {
   "intro": "I'm Kathir.",
@@ -32,39 +32,51 @@ window.siteContent = {
   },
   "email": "kathirilango11@gmail.com",
   "portraits": [
-    "assets/me.jpg",
-    "assets/me2.jpg"
+    "assets/me.jpg?v=3",
+    "assets/me2.jpg?v=3"
   ],
   "gallery": [
     {
-      "src": "assets/gallery/02.jpg",
+      "src": "assets/gallery/02.jpg?v=3",
       "alt": "Low sunlight illuminating a field of cholla cacti beneath a mountain ridge.",
-      "caption": ""
+      "caption": "",
+      "width": 2000,
+      "height": 1526
     },
     {
-      "src": "assets/gallery/03.jpg",
+      "src": "assets/gallery/03.jpg?v=3",
       "alt": "Snow-covered granite peaks reflected in a still alpine lake under a blue sky.",
-      "caption": ""
+      "caption": "",
+      "width": 1273,
+      "height": 2000
     },
     {
-      "src": "assets/gallery/05.jpg",
+      "src": "assets/gallery/05.jpg?v=3",
       "alt": "A pagoda above a quiet street at dusk, with glowing lanterns along the buildings.",
-      "caption": ""
+      "caption": "",
+      "width": 1599,
+      "height": 2000
     },
     {
-      "src": "assets/gallery/01.jpg",
+      "src": "assets/gallery/01.jpg?v=3",
       "alt": "Golden light on a granite dome beneath dark clouds, framed by silhouetted trees.",
-      "caption": ""
+      "caption": "",
+      "width": 2000,
+      "height": 1928
     },
     {
-      "src": "assets/gallery/04.jpg",
+      "src": "assets/gallery/04.jpg?v=3",
       "alt": "A single yellow tulip among a field of red tulips.",
-      "caption": ""
+      "caption": "",
+      "width": 2000,
+      "height": 1177
     },
     {
-      "src": "assets/gallery/06.jpg",
+      "src": "assets/gallery/06.jpg?v=3",
       "alt": "A winding river through layered desert canyons under a cloudy sky.",
-      "caption": ""
+      "caption": "",
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "assets/gallery/07.jpg",
