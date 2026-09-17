@@ -4,7 +4,7 @@ $('.navbar-collapse a').click(function(){
 });
 
 //Typing Text Animation
-var text = "I'm Kathir.";
+var text = window.siteContent.intro;
 var textArr = text.split("");
 var loopTimer;
 var span = 	document.getElementById("type_text").innerHTML;

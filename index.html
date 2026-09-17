@@ -28,6 +28,7 @@
 </head>
 
 <body>
+<noscript><p style="background: white; padding: 1rem;">Please enable JavaScript to view the biography and experience sections.</p></noscript>
 <div class="fixed-background"></div>
 
 <nav class="navbar navbar-inverse navbar-expand-md navbar-dark bg-dark"  id="nav">
@@ -48,7 +49,7 @@
 					<a class="nav-link" href="#projects">Projects</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="https://www.instagram.com/thecanoncowboy/" target="_blank">Photography</a>
+					<a class="nav-link" data-link="instagram" href="https://www.instagram.com/thecanoncowboy/" target="_blank">Photography</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#contact">Contact</a>
@@ -62,15 +63,15 @@
 <div class="container-fluid fill">
 	<div class="row caption">
 		<div class="col-12">
-			<h3 class="quote"><i><b>Oh, hey there!</b>    <span class="quote-source">-George Kittle</span></i></h3>
+			<h3 class="quote"><i><b data-content="greeting"></b>    <span class="quote-source" data-content="attribution"></span></i></h3>
 		</div>
 		<div class="col-12">
 			<h1 class="display-2" id="type_text"><span class="blinking-cursor">|</span></h1>
 		</div>
 		<div class="col-12 social">
-			<a href="https://www.linkedin.com/in/kathirilango" target="_blank"><i class="fab fa-linkedin"></i></a>
-			<a href="https://github.com/kathirilango" target="_blank"><i class="fab fa-github"></i></a>
-			<a href="https://www.instagram.com/thecanoncowboy/" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a data-link="linkedin" href="https://www.linkedin.com/in/kathirilango" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a data-link="github" href="https://github.com/kathirilango" target="_blank"><i class="fab fa-github"></i></a>
+			<a data-link="instagram" href="https://www.instagram.com/thecanoncowboy/" target="_blank"><i class="fab fa-instagram"></i></a>
 		</div>
 	</div>
 </div>
@@ -81,22 +82,19 @@
 		<div class="col-md-12 col-lg-3 img-wrapper">
 			<br>
 			<br>
-			<img src="assets/me.jpg" class="img-fluid">
+			<img data-portrait="0" src="assets/me.jpg" class="img-fluid">
 		</div>
 		<div class="col-md-12 col-lg-6 txt-wrapper">
 			<h2 class="hdr-left">About Me</h2>
 			<hr class="work-line">
-			<p>Hello! My name is Kathir and I'm an engineer at Stripe. I spent my entire life in the Bay Area until I went to college in Los Angeles, and I'm currently living in Seattle. If COVID-19 did one good thing for me, it was giving me so much free time to the point that I decided to build this website from scratch; I hope you enjoy!
-			</p>
-			<p>I started my career entirely focused on cloud computing and distributed systems, working on a team in SharePoint Online that was focused on building world class compute capacity management for SharePoint's massive amount of customer traffic. After a few years, I decided to make the move to Stripe, where I currently work on edge infrastructure. On top of that, living in Seattle has been the best move for my life that I never expected. The city works for my personality and I truly fit in here!
-			</p>
-			<p>Outside of work, my favorite activities include hiking, watching movies, reading, weightlifting, photography, and playing/watching sports. I'm obsessed with the outdoors; I'm always looking for the next adventure. My strongest belief in life is that if I have a finite amount of time on this planet, I have no reason to not explore every inch of it that I possibly can before my time is up. And I plan to do exactly that.
-			</p>
+			<p data-content="about_paragraph_1"></p>
+			<p data-content="about_paragraph_2"></p>
+			<p data-content="about_paragraph_3"></p>
 		</div>
 		<div class="col-md-12 col-lg-3 img-wrapper">
 			<br>
 			<br>
-			<img src="assets/me2.jpg" class="img-fluid">
+			<img data-portrait="1" src="assets/me2.jpg" class="img-fluid">
 		</div>
 	</div>
 </div>
@@ -122,51 +120,51 @@
 	<div class="col-md-8 col-lg-6 col-xl-4">
 	  <div class="tab-content" id="nav-tabContent">
 		<div class="tab-pane fade show active" id="list-stripe" role="tabpanel" aria-labelledby="list-stripe">
-			<h4>Stripe</h4>
-			<h6><i>Software Engineer &bull; 2025-Present</i></h6>
-			<p>Stripe is an online payments infrastructure company whose goal is to increase the GDP of the internet. I got onboard to build a secure and fast edge infrastructure to connect Stripe's products to our users worldwide while shielding our services from the complexity of the internet. Stripe is as much a financial services company as it is a traditional software company, and I've learned a lot of new things in this sphere.</p>
+			<h4 data-content="stripe_company_1"></h4>
+			<h6><i data-content="stripe_role_1"></i></h6>
+			<p data-content="stripe_paragraph_1"></p>
 		</div>
 		<div class="tab-pane fade" id="list-microsoft" role="tabpanel" aria-labelledby="list-microsoft">
-			<h4>Microsoft</h4>
-			<h6><i>Software Engineer &bull; 2021-2025</i></h6>
-			<p>I returned to the same team that I interned with. My general focus was on improving capacity management and service reliability for SharePoint Online.</p>
-			<h6><i>Software Engineer Intern &bull; Summer 2020</i></h6>
-			<p>I worked remotely with a team within SharePoint Online whose main focus was capacity management and disaster recovery.</p>
+			<h4 data-content="microsoft_company_1"></h4>
+			<h6><i data-content="microsoft_role_1"></i></h6>
+			<p data-content="microsoft_paragraph_1"></p>
+			<h6><i data-content="microsoft_role_2"></i></h6>
+			<p data-content="microsoft_paragraph_2"></p>
 		</div>
 		<div class="tab-pane fade" id="list-workato" role="tabpanel" aria-labelledby="list-workato">
-			<h4>Workato</h4>
-			<h6><i>Software Engineer Intern &bull; Summer 2019</i></h6>
-			<p>Workato is an integration automation company that is on the rise, and I was able to sneak into an internship there while they were still relatively young. Key accomplishments/takeaways:</p>
+			<h4 data-content="workato_company_1"></h4>
+			<h6><i data-content="workato_role_1"></i></h6>
+			<p data-content="workato_paragraph_1"></p>
 			<ul>
-				<li>Primarily helped integrate AWS Simple Notification Service into Workato platform</li>
-				<li>Played pivotal role in transporting boxes as we moved from old office in Cupertino to new one in Mountain View</li>
+				<li data-content="workato_highlight_1"></li>
+				<li data-content="workato_highlight_2"></li>
 			</ul>
 		</div>
 		<div class="tab-pane fade" id="list-avi" role="tabpanel" aria-labelledby="list-avi">
-			<h4>Avi Networks</h4>
-			<h6><i>Software Engineer Intern &bull; Summer 2018</i></h6>
-			<p>Avi Networks is a multi-cloud application delivery company that was acquired by VMware just a year after I worked there. Key accomplishments/takeaways:</p>
+			<h4 data-content="avi_company_1"></h4>
+			<h6><i data-content="avi_role_1"></i></h6>
+			<p data-content="avi_paragraph_1"></p>
 			<ul>
-				<li>First ever internship, in terms of sheer learning the steepest learning curve</li>
-				<li>Primarily wrote a testing library, a relatively unimpactful project compared to the next two internships considering lack of experience at the time</li>
+				<li data-content="avi_highlight_1"></li>
+				<li data-content="avi_highlight_2"></li>
 			</ul>
 		</div>
 		<div class="tab-pane fade" id="list-bsa" role="tabpanel" aria-labelledby="list-bsa">
-			<h4>Bruin Sports Analytics</h4>
-			<h6><i>President &bull; 2020-2021</i></h6>
-			<p>I capped off my journey by serving as President of the club, managing all of our operations and teams.</p>
-			<h6><i>Journalism Chair &bull; 2019-2020</i></h6>
-			<p>In my 3rd year I took a leadership role and managed the production of our quarterly articles.</p>
-			<h6><i>Data Journalist &bull; 2017-2019</i></h6>
-			<p>This club was founded during my first year of college. I spent the first two years writing articles that used data science to investigate contemporary sports topics.</p>
+			<h4 data-content="bsa_company_1"></h4>
+			<h6><i data-content="bsa_role_1"></i></h6>
+			<p data-content="bsa_paragraph_1"></p>
+			<h6><i data-content="bsa_role_2"></i></h6>
+			<p data-content="bsa_paragraph_2"></p>
+			<h6><i data-content="bsa_role_3"></i></h6>
+			<p data-content="bsa_paragraph_3"></p>
 		</div>
 		<div class="tab-pane fade" id="list-blackbox" role="tabpanel" aria-labelledby="list-blackbox">
-			<h4>BlackBox Trading, LLC</h4>
-			<h6><i>Strategy Development &bull; 2018-2021</i></h6>
-			<p>BlackBox is a project I worked on for 2 years. Our team creates systematic trading strategies based on statistical factors and deploys these strategies to trade on the stock market. I was approached during my 2nd year of college by a few high school classmates and we worked on it until we graduated. Key accomplishments/takeaways:</p>
+			<h4 data-content="blackbox_company_1"></h4>
+			<h6><i data-content="blackbox_role_1"></i></h6>
+			<p data-content="blackbox_paragraph_1"></p>
 			<ul>
-				<li>Gained exposure to subjects (finance & trading) that I had little experience with</li>
-				<li>Opportunity to stay connected with old friends and meet new people</li>
+				<li data-content="blackbox_highlight_1"></li>
+				<li data-content="blackbox_highlight_2"></li>
 			</ul>
 		</div>
 	  </div>
@@ -203,7 +201,7 @@
 		<div class="key box white"></div><div class="key box white"></div><div class="key box white"></div>
     </div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
-	<script src="main.js"></script>
+
   </div>
 </div>
 
@@ -286,10 +284,10 @@
 	<div class="container-fluid" id="contact">
 		<div class="col-12"><a href="#"><i class="far fa-arrow-alt-circle-up"></i></a></div>
 		<div class="col-12 social-footer">
-			<a href="https://www.linkedin.com/in/kathirilango" target="_blank"><i class="fab fa-linkedin"></i></a>
-			<a href="https://github.com/kathirilango" target="_blank"><i class="fab fa-github"></i></a>
-			<a href="https://www.instagram.com/thecanoncowboy/" target="_blank"><i class="fab fa-instagram"></i></a>
-			<a data-toggle="popover" data-content="kathirilango11@gmail.com"><i class="far fa-envelope"></i></a>
+			<a data-link="linkedin" href="https://www.linkedin.com/in/kathirilango" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a data-link="github" href="https://github.com/kathirilango" target="_blank"><i class="fab fa-github"></i></a>
+			<a data-link="instagram" href="https://www.instagram.com/thecanoncowboy/" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a data-toggle="popover" data-email><i class="far fa-envelope"></i></a>
 		</div>
 		<div class="col-12">Thank You</div>
 		<div class="col-12" style="font-size: 15px; font-family: Archivo;">Full Website Designed and Written by Kathir Ilango</div>
@@ -298,5 +296,7 @@
 </body>
 
 <!--Scripts-->
+<script src="content.js"></script>
+<script src="js/content.js"></script>
 <script src="js/main.js"></script>
 </html>
