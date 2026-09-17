@@ -20,7 +20,7 @@ Structure lives in **index.html**, appearance in **styles.css**, content renderi
 
 1. Put actual JPEG files in **assets/gallery/** named **01.jpg** through **09.jpg** (lowercase).
 2. Refresh the page. Photos appear individually as they load; missing slots are hidden.
-3. Add a short description to each photograph's `alt` in **content.js**. A caption is optional.
+3. Add a short description to each photograph's `alt` in **content.js**. A caption is optional and appears only in the enlarged photo viewer; the gallery stays image-only.
 
 You can use another filename or format by changing `src` in the matching gallery entry. Don't rename a HEIC file to `.jpg`; export it as JPEG first. Original image proportions are preserved. Aim for roughly 2000 pixels on the long edge and under 1 MB per image. The current gallery copies are optimized at 2000 pixels, and the two portraits at 1200 pixels. Originals remain in Documents/candidates and in the checkpoint 2 commit. Replacing a cached photo may require a hard refresh.
 

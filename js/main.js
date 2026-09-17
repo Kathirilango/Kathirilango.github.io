@@ -215,11 +215,6 @@
     button.append(image);
     button.addEventListener('click', () => openPhoto(photo, button));
     figure.append(button);
-    if (photo.caption) {
-      const caption = document.createElement('figcaption');
-      caption.textContent = photo.caption;
-      figure.append(caption);
-    }
     image.onload = () => {
       photo.loaded = true;
       image.width = image.naturalWidth;
