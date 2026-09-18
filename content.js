@@ -10,7 +10,7 @@ window.siteContent = {
     "attribution": "-George Kittle",
     "hero_description": "Husband, brother, and son. Photographer, movie guy, and lifelong Niners fan. Always an Eagle Scout. Happiest outside.",
     "about_title": "A little about me.",
-    "about_paragraph_1": "I grew up in Fremont, CA, a quiet Bay Area suburb where my family and closest friends were around for pretty much my entire childhood. I went to college in Los Angeles and now call Seattle home. Moving here was the best decision I never expected to make. The mountains, the water, the city — it feels like me.",
+    "about_paragraph_1": "I grew up in Fremont, CA, a quiet Bay Area suburb where my family and closest friends were around for pretty much my entire childhood. I went to college in Los Angeles and now call Seattle home. Moving here was the best decision I never expected to make. The mountains, the water, the city... it feels like me.",
     "about_paragraph_2": "I love hiking, taking photos, watching movies, learning about history, and staying active. I spend a lot of time with my wife, and probably too much time following the Niners and hoping for another Super Bowl. I pay for all this stuff by working for Stripe, helping businesses accept online payments.",
     "about_paragraph_3": "What I dream about most is traveling to new places, learning their history, and experiencing their landscapes and cultures.",
     "gallery_title": "Through my lens.",
