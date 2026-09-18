@@ -78,12 +78,26 @@
       return;
     }
     if (!animations.length) {
-      animations = [...keyboard.querySelectorAll('.key')].map((key, index) => {
-        const animation = key.animate([
-          { transform: 'translateY(0) rotate(0deg)' },
-          { transform: 'translateY(42px) rotate(360deg)', offset: 0.5 },
-          { transform: 'translateY(0) rotate(720deg)' }
-        ], { duration: 20000, delay: index * 100, iterations: Infinity, easing: 'ease-in-out' });
+      const keys = [...keyboard.querySelectorAll('.key')];
+      const movementDuration = 20000;
+      const stagger = 100;
+      const restDuration = 1000;
+      // Every key shares one cycle. Earlier keys wait for the last key to
+      // return, then the whole keyboard rests for one second before repeating.
+      const cycleDuration = movementDuration + (keys.length - 1) * stagger + restDuration;
+      animations = keys.map((key, index) => {
+        const start = index * stagger / cycleDuration;
+        const middle = (index * stagger + movementDuration / 2) / cycleDuration;
+        const end = (index * stagger + movementDuration) / cycleDuration;
+        const frames = [{ transform: 'translateY(0) rotate(0deg)', offset: 0 }];
+        if (start > 0) frames.push({ transform: 'translateY(0) rotate(0deg)', offset: start });
+        frames[frames.length - 1].easing = 'ease-in-out';
+        frames.push(
+          { transform: 'translateY(42px) rotate(360deg)', offset: middle, easing: 'ease-in-out' },
+          { transform: 'translateY(0) rotate(720deg)', offset: end },
+          { transform: 'translateY(0) rotate(720deg)', offset: 1 }
+        );
+        const animation = key.animate(frames, { duration: cycleDuration, iterations: Infinity });
         animation.pause();
         return animation;
       });
